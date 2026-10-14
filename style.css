@@ -122,3 +122,19 @@ a {
 .filters a.active {
     background-color: var(--accent);
 }
+
+
+/* 6. Galerie (CSS Grid) - vue ordinateur : 4colonnes */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
