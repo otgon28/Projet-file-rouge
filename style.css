@@ -74,3 +74,51 @@ a {
     margin-top: 0.4rem;
     text-transform: none;
 }
+
+
+/* Section de présentation (hero) */
+.hero {
+    padding-top: 3rem;
+}
+
+.hero h1 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.hero p {
+    max-width: 36rem;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+/* Filtres de la galerie */
+.filters {
+    margin: 2.5rem 0 1.5rem;
+}
+
+.filters ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.filters a {
+    display: block;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.filters a.active {
+    background-color: var(--accent);
+}
