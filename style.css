@@ -1,0 +1,76 @@
+/*  Variables et base */
+:root {
+    --bg: #041a22;
+    --text: #ffffff;
+    --muted: #7d8c90;
+    --accent: #1fd1a1;
+    --line: rgba(255, 255, 255, 0.15);
+    --font-title: "Yeseva One", serif;
+    --font-text: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-text);
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Conteneur centré du contenu principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* En-tête */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.logo-dot {
+    color: var(--accent);
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Pied de page */
+.site-footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.site-footer p:last-child {
+    margin-top: 0.4rem;
+    text-transform: none;
+}
