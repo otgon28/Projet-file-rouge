@@ -56,8 +56,16 @@ a {
 
 .social {
     display: flex;
-    gap: 1rem;
+    gap: 18px;
     font-size: 0.8rem;
+}
+.social a{
+    color: var(--text);
+    font-size: 13px;    
+}
+
+.social a:hover {
+    color: var(--accent);
 }
 
 /* Pied de page */
@@ -124,7 +132,7 @@ a {
 }
 
 
-/* 6. Galerie (CSS Grid) - vue ordinateur : 4colonnes */
+/* Galerie (CSS Grid) - vue ordinateur : 4colonnes */
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -137,4 +145,55 @@ a {
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
+
+
+/* Responsive */
+
+/* Tablette : 5 colonnes, 15 images */
+@media (max-width: 1023px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Mobile : en-tête centré, 3 colonnes, 9 images */
+@media (max-width: 767px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .filters ul {
+        gap: 0.4rem;
+    }
+
+    .filters a {
+        padding: 0.2rem 0.3rem;
+        font-size: 0.55rem;
+        letter-spacing: 0.12em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Masque les images à partir de la dixième */
+    .grid img:nth-child(n + 10) {
+        display: none;
+    }
+
 }
